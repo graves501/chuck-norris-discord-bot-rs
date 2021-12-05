@@ -1,0 +1,12 @@
+[package]
+name = "chuck-norris-discord-bot-rs"
+version = "0.1.0"
+authors = ["graves501"]
+edition = "2021"
+
+[dependencies]
+serenity = { version = "0.10", default-features = false, features = ["client", "gateway", "rustls_backend", "model"] }
+tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
+serde = { version = "1.0.126", features = ["derive"] }
+reqwest = { version = "0.11", features = ["json", "blocking"] }
+dotenv = { version = "0.15.0" }
